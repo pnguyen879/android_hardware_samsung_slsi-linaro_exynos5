@@ -20,9 +20,7 @@ include $(CLEAR_VARS)
 MOBICORE_PATH := hardware/samsung_slsi-linaro/$(TARGET_SOC_BASE)/mobicore
 
 LOCAL_MODULE := keystore.exynos5
-LOCAL_PROPRIETARY_MODULE := true
 LOCAL_MODULE_RELATIVE_PATH := hw
-
 LOCAL_SRC_FILES := keymaster_mobicore.cpp tlcTeeKeymaster_if.c
 LOCAL_C_INCLUDES := \
 	$(MOBICORE_PATH)/daemon/ClientLib/public \
